@@ -29,21 +29,21 @@ public class PanelBuilder : BaseNetLogic
         // Get the navigation panel (Owner of this NetLogic)
         var navigationPanel = Owner;
 
-        // Get the Items or Panels child node where NavigationPanelItems should be added
-        var panels = navigationPanel.Get("Panels");
+        // Get the Panels node where NavigationPanelItems should be added
+        var panelItems = navigationPanel.Get("Panels");
 
         // Create a new NavigationPanelItem
-        var newNavPanel = InformationModel.Make<NavigationPanelItem>("Panel");
+        var newPanelItem = InformationModel.Make<NavigationPanelItem>("Panel");
 
         // Set all NavigationPanelItem properties
-        newNavPanel.Title = title;
-        newNavPanel.Panel = panelId;
-        newNavPanel.AliasNode = aliasId;
-        newNavPanel.Enabled = true;
-        newNavPanel.Visible = true;
+        newPanelItem.Title = title;
+        newPanelItem.Panel = panelId;
+        newPanelItem.AliasNode = aliasId;
+        newPanelItem.Enabled = true;
+        newPanelItem.Visible = true;
 
         // Add the navigation item to the navigation panel
-        panels.Add(newNavPanel);
+        panelItems.Add(newPanelItem);
     }
 
     [ExportMethod]
