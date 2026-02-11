@@ -1,0 +1,50 @@
+Name: DataObjects
+Type: FolderType
+Children:
+- Name: DataObject1
+  Id: g=ecde7024d4d134439e8e33303dd7eabb
+  Type: BaseObjectType
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "First Data Object"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 111
+- Name: DataObject2
+  Id: g=da2639db4f4888d1163e2897f20d792f
+  Type: BaseObjectType
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Second Data Object"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 222
+- Name: DataObject3
+  Id: g=d42000af62de3f6a60b74a4b79bd32b1
+  Type: BaseObjectType
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Third Data Object"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 333
+- Name: DataObject4
+  Type: BaseObjectType
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Fourth Data Object"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 444
